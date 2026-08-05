@@ -1,98 +1,125 @@
-## 🚀 Live Demo
-
-🔗 **Try the Iris Flower Classifier:**  
-https://iris-flower-classification-w9hx6arklbj2naxatalzsf.streamlit.app/
-
-
 # 🌸 Iris Flower Classification
 
-This project uses Machine Learning to classify Iris flowers into three species based on their measurements.
+A Machine Learning web application that predicts the species of an Iris flower based on four flower measurements using the K-Nearest Neighbors (KNN) algorithm.
 
-## 🎯 Project Objective
+---
 
-The objective of this project is to build a machine learning model that can predict the species of an Iris flower using:
+## 🚀 Live Demo
 
-- Sepal Length
-- Sepal Width
-- Petal Length
-- Petal Width
+🔗 https://iris-flower-classification-w9hx6arklbj2naxatalzsf.streamlit.app/
 
-## 🌺 Iris Species
+---
 
-The model classifies flowers into three species:
+## 📌 Project Objective
 
-- Setosa
-- Versicolor
-- Virginica
+The objective of this project is to classify Iris flowers into one of three species:
 
-## 🛠️ Technologies Used
+- Iris Setosa
+- Iris Versicolor
+- Iris Virginica
+
+using Machine Learning based on flower measurements.
+
+---
+
+## 🛠 Technologies Used
 
 - Python
-- Google Colab
+- Streamlit
+- Scikit-learn
 - Pandas
 - NumPy
-- Matplotlib
-- Seaborn
-- Scikit-learn
 
-## 🤖 Machine Learning Models
+---
 
-The project includes:
+## 📊 Machine Learning Algorithm
 
-- K-Nearest Neighbors (KNN)
-- Logistic Regression
-- Model comparison
-- Cross-validation
-- Final model selection
+This project uses the **K-Nearest Neighbors (KNN)** Classification Algorithm.
 
-## 📊 Results
+The model predicts the flower species by comparing the input measurements with the nearest flowers in the dataset.
 
-The final selected model achieved:
+---
 
-**Final Test Accuracy: 100.00%**
+## 📏 Input Features
 
-The confusion matrix showed that all 30 test samples were classified correctly.
+The application accepts four measurements:
 
-| Species | Correct Predictions |
-|---------|---------------------|
-| Setosa | 10 |
-| Versicolor | 9 |
-| Virginica | 11 |
+- Sepal Length (cm)
+- Sepal Width (cm)
+- Petal Length (cm)
+- Petal Width (cm)
 
-## 🔍 Cross-Validation
+---
 
-Cross-validation was used to compare model performance and select a suitable final model.
+## 🌼 Flower Species
 
-The project also tested different K values for the KNN algorithm.
+- Iris Setosa
+- Iris Versicolor
+- Iris Virginica
 
-## 🧪 Sample Predictions
+---
 
-The final model successfully predicted sample Iris flowers as:
+## 🖥️ Application Screenshots
 
-- Setosa
-- Versicolor
-- Virginica
+### Home Page
 
-## 📁 Project Files
+![Home](images/app-home.png)
 
-- `Iris_Flower_Classification.ipynb` - Complete Google Colab notebook containing the project code, visualizations, model training, evaluation, and predictions.
+### Prediction Result
 
-## 📚 Conclusion
+![Prediction](images/prediction-result.png)
 
-This project demonstrates how supervised machine learning can be used to classify Iris flowers based on their physical measurements.
+---
 
-The final model achieved 100% accuracy on the test dataset used in this project.
+## 📂 Project Structure
 
-## 🚀 Future Scope
+```
+Iris-Flower-Classification
+│
+├── app.py
+├── Iris_Flower_Classification.ipynb
+├── README.md
+├── requirements.txt
+│
+└── images
+    ├── setosa.jpg
+    ├── versicolor.jpg
+    ├── virginica.jpg
+    ├── app-home.png
+    └── prediction-result.png
+```
 
-Possible improvements include:
+---
 
-- Testing the model on a larger dataset
-- Trying additional machine learning algorithms
-- Creating a simple web application for predictions
-- Deploying the model as an online application
-- Using real-world flower data
+## ⚙️ Installation
 
-## 👩‍💻 Author
+Clone the repository
 
-Tejaswini.
+```bash
+git clone https://github.com/tejaswini24-student/Iris-Flower-Classification.git
+```
+
+Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+Run the application
+
+```bash
+streamlit run app.py
+```
+
+---
+
+## 🎯 Result
+
+The application predicts the Iris flower species along with prediction probabilities using a trained KNN Machine Learning model.
+
+---
+
+## 👩‍💻 Developed By
+
+**Tejaswini .K**
+B.Tech CSE (AI & ML)
